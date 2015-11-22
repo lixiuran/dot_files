@@ -1,2 +1,1 @@
-# dot_files
-LINUX DOT RELATE FILE OF CONFIG
+# dots
