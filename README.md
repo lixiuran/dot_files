@@ -35,3 +35,17 @@ let g:neocomplcache_enable_at_startup = 1
 
 然后保存退出,随便编写一个php文件,任意写个php自带的函数，看看有没有提示！
 
+```
+	/**
+     * 课前1小时短信通知 每小时执行一次: 整点执行
+     * @author lixiuran  <lixiuran@51talk.com>
+     */
+    public function courseBegin()
+    {
+        $begin_time = date("Y-m-d H:00:00", strtotime('+1 hour'));
+        $end_time 	= date("Y-m-d H:00:00", strtotime('+2 hour'));
+
+        $this->_dependAppointStatus(__FUNCTION__, $begin_time, $end_time, self::ST_STU_ON);
+    }
+
+```
