@@ -1,9 +1,9 @@
 # VIM as a PHP IDE 
 1. vim 编写php文件如何添加class注释或function注释？
 ```
-wget https://github.com/lixiuran/dot_files/raw/master/vim/php-doc.vim
+git clone https://github.com/lixiuran/dot_files.git
 
-cp ./php-doc.vim /usr/share/vim/vim73/autoload/php-doc.vim [注意你的vim的版本]
+cp ./vim/php-doc.vim /usr/share/vim/vim73/autoload/php-doc.vim [注意你的vim的版本]
 
 vim ~\.vimrc
 
@@ -17,9 +17,7 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 
 2. vim 编写php,java,python 时如何向IDE一样自动提示函数？
 ```
-wget  https://github.com/lixiuran/dot_files/raw/master/vim/neocomplcache-8.0.zip
-
-unzip ./neocomplcache-8.0.zip -d ./neocomplcache 
+unzip ./vim/neocomplcache-8.0.zip -d ./neocomplcache 
 
 sudo cp -rfv ./neocomplcache/autoload/* /usr/share/vim/vim73/autoload/
 sudo cp -rfv ./neocomplcache/plugin/* /usr/share/vim/vim73/plugin/
